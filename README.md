@@ -1,7 +1,7 @@
 # LowRAM-Flag
 A simple Magisk module that activates "Android Go"
 
-# What disables / is affected?
+## What disables / is affected?
   * Picture In Picture Disabled
   * Split Screen Disabled
   * Navbar Rotation Button Disabled
@@ -18,14 +18,13 @@ A simple Magisk module that activates "Android Go"
   * VR Listeners Disabled
   * Blur Disabled
 
-# What are the benefits?
+## What are the benefits?
   * Lower RAM consumption
   * Some apps will reduce their resource consumption
   * Apps like Gmail Go, Gboard Go, etc are available in Play Store
-
 Recommended for devices with low RAM (3GB or less), but you can also use it on devices with higher RAM (4GB or more).
 
-# Based on:
+## Based on:
 LowRAM Property Patcher Original:
 https://forum.xda-developers.com/t/mod-low-ram-property-patcher-for-android.3737373/
 
