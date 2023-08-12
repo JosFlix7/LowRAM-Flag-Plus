@@ -1,0 +1,3 @@
+# LowRAM-FLag
+ro.config.low_ram=true
+ro.config.low_ram2g=true
