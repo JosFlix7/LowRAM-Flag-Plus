@@ -17,6 +17,7 @@ A simple Magisk module that activates "Android Go"
   * No App Zen Mode Access
   * VR Listeners Disabled
   * Blur Disabled
+  * Wallpaper Zooming Disabled
 
 ## What are the benefits?
   * Lower RAM consumption
