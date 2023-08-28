@@ -17,3 +17,19 @@ fw.show_hidden_users=0
 fw.show_multiuserui=0
 fw.show_user_switcher_on_lockscreen=0
 fw.user_creation_disabled=1
+
+# Disable Bootanimation For Quicker Boot & Fast Reboot
+debug.sf.nobootanimation=1
+ro.config.hw_quickpoweron=true
+dev.bootcomplete=0
+
+# Don't force home launcher into memory
+ro.HOME_APP_ADJ=0
+
+# Dalvik VM Heap 1GB Config (Makes system uses less RAM)
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=64m
+dalvik.vm.heapsize=128m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=2m
+dalvik.vm.heapmaxfree=8m

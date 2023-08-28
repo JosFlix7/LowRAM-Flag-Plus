@@ -27,8 +27,5 @@ A simple Magisk module that activates "Android Go"
 Recommended for devices with low RAM (3GB or less), but you can also use it on devices with higher RAM (4GB or more).
 
 ## Based on:
-LowRAM Property Patcher Original:
-https://forum.xda-developers.com/t/mod-low-ram-property-patcher-for-android.3737373/
-
-LowRAM Propery Patcher Magisk Ver.:
-https://forum.xda-developers.com/t/magisk-module-mod-low-ram-property-patcher-for-android.3740199/
+<a href="https://forum.xda-developers.com/t/mod-low-ram-property-patcher-for-android.3737373/" target="_blank">LowRAM Property Patcher Original</a>
+<a href="https://forum.xda-developers.com/t/magisk-module-mod-low-ram-property-patcher-for-android.3740199/" target="_blank">LowRAM Propery Patcher Magisk Ver.</a>
