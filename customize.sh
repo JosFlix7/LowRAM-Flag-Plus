@@ -4,46 +4,28 @@ PROPFILE=true
 POSTFSDATA=false
 LATESTARTSERVICE=false
 
+ui_print "- Checking Android version."
+A_API=$(getprop ro.build.version.sdk)
+A_VER=$(getprop ro.build.version.release)
+if [[ $A_API -ge 26 ]]; then
+  ui_print "- Android $A_VER detected."
+else
+  abort "- ERROR: This module is only compatible with Android 8 onwards!."
+fi
+
 ui_print "*******************************************************"
-ui_print "   LowRAM-Flag+"
+ui_print "   LowRAM-Flag Plus"
 ui_print "   By JosFlix7"
-ui_print "   For Android 8~14"
+ui_print "   For Android 8+"
 ui_print "*******************************************************"
 
 ui_print "- Unzipping module."
 unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
 
-ui_print "- Checking Android version."
-CODENAME=$(getprop ro.build.version.sdk)
-if [[ "$CODENAME" == "34" ]]; then
-  ui_print "- Android 14 detected."
+
+if [[ $A_API -ge 30 ]]; then
   ui_print "- Adding extra overlays."
-elif [[ "$CODENAME" == "33" ]]; then
-  ui_print "- Android 13 detected."
-  ui_print "- Adding extra overlays."
-elif [[ "$CODENAME" == "32" ]]; then
-  ui_print "- Android 12L detected."
-  ui_print "- Adding extra overlays."
-elif [[ "$CODENAME" == "31" ]]; then
-  ui_print "- Android 12 detected."
-  ui_print "- Adding extra overlays."
-elif [[ "$CODENAME" == "30" ]]; then
-  ui_print "- Android 11 detected."
-  ui_print "- Adding extra overlays."
-elif [[ "$CODENAME" == "29" ]]; then
-  ui_print "- Android 10 detected."
-  ui_print "- Removing unnecessary module files."
-  rm -rf "$MODPATH"/system
-elif [[ "$CODENAME" == "28" ]]; then
-  ui_print "- Android 9 detected."
-  ui_print "- Removing unnecessary module files."
-  rm -rf "$MODPATH"/system
-elif [[ "$CODENAME" == "27" ]]; then
-  ui_print "- Android 8.1 detected."
-  ui_print "- Removing unnecessary module files."
-  rm -rf "$MODPATH"/system
-elif [[ "$CODENAME" == "26" ]]; then
-  ui_print "- Android 8 detected."
+elif [[ $A_API -le 29 ]]; then
   ui_print "- Removing unnecessary module files."
   rm -rf "$MODPATH"/system
 fi

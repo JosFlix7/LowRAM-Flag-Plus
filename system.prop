@@ -33,5 +33,6 @@ dalvik.vm.heapsize=128m
 dalvik.vm.heaptargetutilization=0.75
 dalvik.vm.heapminfree=2m
 dalvik.vm.heapmaxfree=8m
+
 # Makes system believe that have a small battery
 ro.config.small_battery=true

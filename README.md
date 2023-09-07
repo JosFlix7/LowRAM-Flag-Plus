@@ -1,6 +1,6 @@
-# LowRAM-Flag
+# LowRAM-Flag Plus
 A simple Magisk module that activates "Android Go"
-* Only Android 8 ~ 14
+* Only Android 8 and newer
 
 ## What disables / is affected?
 * Picture In Picture Disabled
